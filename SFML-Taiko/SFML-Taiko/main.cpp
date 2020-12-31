@@ -8,12 +8,12 @@
 /// Using this, the Drum itself can be used as a controlled for niche game ideas with the drum in mind.
 /// 
 /// Created 31/12/2020
-/// Time Taken: ~2 hours
+/// Time Taken: ~3 hours
 /// 
 /// ~~~~~~~~~~~~~~~~~
 /// KNOWN BUGS:
-/// 
-/// 
+/// Unsure if it's code-wise or Drum problem, but sometimes input is not taken in.
+/// Requires further testing to figure out if it's a problem with Code or with how hard I'm hitting the Drum.
 /// 
 /// 
 /// </summary>

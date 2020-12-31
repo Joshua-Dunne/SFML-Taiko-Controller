@@ -13,9 +13,9 @@ void BoxVisual::update(sf::Time& dt)
 	{
 		// gradually decrease all values by fade rate
 		m_body.setFillColor(m_body.getFillColor() - sf::Color{ 
-			m_fadeRate,
-			m_fadeRate,
-			m_fadeRate,
+			static_cast<sf::Uint8>(m_fadeRate * dt.asMilliseconds()),
+			static_cast<sf::Uint8>(m_fadeRate * dt.asMilliseconds()),
+			static_cast<sf::Uint8>(m_fadeRate * dt.asMilliseconds()),
 			0 }); // do not change alpha value
 	}
 }
