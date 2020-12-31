@@ -51,16 +51,29 @@ void Game::update(sf::Time& dt)
 	m_drum.update();
 
 	if (m_drum.m_currentState.leftEdge)
-		std::cout << "Left Edge Hit!";
+		std::cout << "Left Edge Hit!" << std::endl;
 
 	if (m_drum.m_currentState.leftMid)
-		std::cout << "Left Middle Hit!";
+		std::cout << "Left Middle Hit!" << std::endl;
 
 	if (m_drum.m_currentState.rightEdge)
-		std::cout << "Right Edge Hit!";
+		std::cout << "Right Edge Hit!" << std::endl;
 
 	if (m_drum.m_currentState.rightMid)
-		std::cout << "Right Middle Hit!";
+		std::cout << "Right Middle Hit!" << std::endl;
+
+
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	{
+		if (m_drum.isConnected())
+		{
+			std::cout << "Drum is connected!" << std::endl;
+		}
+		else
+		{
+			std::cout << "Drum is NOT connected!" << std::endl;
+		}
+	}
 }
 
 void Game::render()
