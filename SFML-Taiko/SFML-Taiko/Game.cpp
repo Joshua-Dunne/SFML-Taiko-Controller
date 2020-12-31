@@ -50,6 +50,7 @@ void Game::update(sf::Time& dt)
 	// update game objects
 	m_drum.update();
 
+#ifdef _DEBUG
 	if (m_drum.m_currentState.leftEdge)
 		std::cout << "Left Edge Hit!" << std::endl;
 
@@ -74,6 +75,7 @@ void Game::update(sf::Time& dt)
 			std::cout << "Drum is NOT connected!" << std::endl;
 		}
 	}
+#endif
 }
 
 void Game::render()
