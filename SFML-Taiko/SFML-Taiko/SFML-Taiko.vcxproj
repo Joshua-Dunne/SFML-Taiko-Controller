@@ -142,11 +142,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoxVisual.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Taiko.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoxVisual.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Taiko.h" />
   </ItemGroup>
