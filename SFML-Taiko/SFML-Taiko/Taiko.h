@@ -19,7 +19,7 @@ class Taiko
 {
 public:
 	Taiko() = delete; // do not use the default constructor
-	Taiko(unsigned int& t_controllerNum);
+	Taiko(unsigned int t_controllerNum);
 
 private:
 	// The controller number for this Drum

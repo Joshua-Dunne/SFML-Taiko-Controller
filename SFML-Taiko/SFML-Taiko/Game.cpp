@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game() :	m_window(sf::VideoMode(800u, 600u), "Taiko DEMO")
+Game::Game() : m_window(sf::VideoMode(800u, 600u), "Taiko DEMO"), m_drum{ 0u }
 {
 	m_window.setFramerateLimit(60u);
 }

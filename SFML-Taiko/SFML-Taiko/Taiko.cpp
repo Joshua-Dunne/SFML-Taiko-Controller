@@ -1,6 +1,6 @@
 #include "Taiko.h"
 
-Taiko::Taiko(unsigned int& t_controllerNum) : m_controllerNum{t_controllerNum}
+Taiko::Taiko(unsigned int t_controllerNum) : m_controllerNum{t_controllerNum}
 {
 }
 
