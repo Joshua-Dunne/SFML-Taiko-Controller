@@ -48,6 +48,19 @@ void Game::processInput()
 void Game::update(sf::Time& dt)
 {
 	// update game objects
+	m_drum.update();
+
+	if (m_drum.m_currentState.leftEdge)
+		std::cout << "Left Edge Hit!";
+
+	if (m_drum.m_currentState.leftMid)
+		std::cout << "Left Middle Hit!";
+
+	if (m_drum.m_currentState.rightEdge)
+		std::cout << "Right Edge Hit!";
+
+	if (m_drum.m_currentState.rightMid)
+		std::cout << "Right Middle Hit!";
 }
 
 void Game::render()

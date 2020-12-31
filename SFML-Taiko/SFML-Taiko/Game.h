@@ -4,6 +4,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
+#include "Taiko.h"
+
 class Game
 {
 public:
@@ -12,6 +14,8 @@ public:
 private:
 	sf::RenderWindow m_window;
 	sf::Clock m_updateClock;
+
+	Taiko m_drum;
 
 public:
 	void run();
