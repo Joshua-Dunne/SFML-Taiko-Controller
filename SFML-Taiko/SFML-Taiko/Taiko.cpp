@@ -3,7 +3,8 @@
 Taiko::Taiko(unsigned int t_controllerNum) : m_controllerNum{t_controllerNum}
 {
 #ifdef _DEBUG
-	std::cout << "Drum connected: " << sf::Joystick::isConnected(m_controllerNum) << std::endl;
+	std::cout << "Drum connected: " << sf::Joystick::isConnected(m_controllerNum)? "Yes" : "No";
+	std::cout << std::endl;
 #endif
 }
 
